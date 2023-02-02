@@ -3,29 +3,57 @@ marp: true
 style: |
   section {
       text-align: center;
+      font-size: 40px;
   }
 ---
 
 # Rust for beginners
 
 ---
-
 Zeeshan Ali Khan
 
 ---
 
-This is nice!
+## 🇵🇰 🇫🇮 🇬🇧 🇸🇪 🇩🇪
+
+---
+C, GStreamer, GNOME, Maemo, Open Source
 
 ---
 
-Create great slides
+## 🛨  🚁  🐈
 
 ---
-
-in VS Code and see them instantly
+What is Rust? 🦀
 
 ---
+Safety + Efficiency
 
-```rust
-let x = 3;
-```
+---
+Safe languages
+
+---
+Haskell, OCaml, Elang etc
+
+---
+Efficient languages
+
+---
+C/C++
+
+---
+Isn't modern C++ safe?
+
+---
+Are you a human?
+
+---
+C++ is not safe
+
+---
+![bg fit](msrc-screenshot.png)
+
+---
+70% of the security issues
+
+---
