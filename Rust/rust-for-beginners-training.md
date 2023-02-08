@@ -6,7 +6,6 @@ style: |
       font-size: 40px;
   }
 ---
-
 # Rust for beginners
 
 ---
@@ -57,3 +56,89 @@ C++ is not safe
 70% of the security issues
 
 ---
+Opt-in vs Opt-out
+
+---
+Beyond memory safety
+
+---
+
+* Microsoft
+* Google
+* Mozilla
+* Facebook
+* AWS
+* Dropbox
+* ...
+
+---
+Ok, let's write some Rust!
+
+---
+The familiar bits first
+
+---
+<style scoped>
+  section {
+      text-align: left;
+  }
+</style>
+
+Hello world!
+
+```rust
+fn main() {
+    println!("Hello, world!");
+}
+```
+
+---
+<style scoped> section { text-align: left; } </style>
+
+Variables
+
+```rust
+fn main() {
+    let x = 5;
+    println!("The value of x is: {}", x);
+}
+```
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+Functions
+
+```rust
+fn main() {
+    another_function(5);
+}
+
+fn another_function(x: i32) {
+    println!("The value of x is: {}", x);
+}
+```
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+Structures
+
+```rust
+struct User {
+    username: String,
+    email: String,
+    sign_in_count: u64,
+}
+
+let user = User {
+    username: String::from("foo"),
+    email: String::from("foo@bar.com"),
+    sign_in_count: 1,
+};
+
+println!(
+    "{} <{}> signed in {} times",
+    user.username, user.email, user.sign_in_count,
+);
+```
