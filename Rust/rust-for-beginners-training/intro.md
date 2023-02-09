@@ -68,6 +68,9 @@ Opt-in vs Opt-out
 Beyond memory safety
 
 ---
+Fearless Concurrency
+
+---
 
 * Microsoft
 * Google
