@@ -71,6 +71,10 @@ Beyond memory safety
 Fearless Concurrency
 
 ---
+Modern language
+
+---
+<style scoped> section { text-align: left; } </style>
 
 * Microsoft
 * Google
@@ -81,7 +85,22 @@ Fearless Concurrency
 * ...
 
 ---
-Ok, let's write some Rust!
+NSA
+
+---
+OK, OK, can we got on with it?
+
+---
+Sure! But first...
+
+---
+Mindset & Expectations
+<br/>
+
+https://ferrous-systems.com/blog/mindsets-and-expectations
+
+---
+OK, let's write some Rust!
 
 ---
 The familiar bits first
@@ -135,7 +154,13 @@ Data types
 Basic types
 
 ---
-u8, i8, .., u128, i128, isize, usize
+<style scoped> section{ text-align: left; }</style>
+
+* u8, i8, .., u128, i128
+* isize and usize
+* f32 and f64
+* bool
+* str and String
 
 ---
 Structures
