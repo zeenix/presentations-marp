@@ -16,7 +16,12 @@ Zeeshan Ali Khan
 ## 🇵🇰 🇫🇮 🇬🇧 🇸🇪 🇩🇪
 
 ---
-C, GStreamer, GNOME, Maemo, Open Source
+<style scoped> section { text-align: left; } </style>
+* C
+* GStreamer
+* GNOME
+* Maemo
+* Open Source
 
 ---
 
@@ -32,7 +37,11 @@ Safety + Efficiency
 Safe languages
 
 ---
-Haskell, OCaml, Elang etc
+<style scoped> section { text-align: left; } </style>
+* Haskell
+* OCaml
+* Elang
+* ...
 
 ---
 Efficient languages
