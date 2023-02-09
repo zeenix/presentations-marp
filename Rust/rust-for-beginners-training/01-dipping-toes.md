@@ -103,6 +103,26 @@ Mindset & Expectations
 https://ferrous-systems.com/blog/mindsets-and-expectations
 
 ---
+Tools
+
+---
+<style scoped> section { text-align: left; } </style>
+Cargo
+
+```bash
+cargo new hello_world
+cd hello_world
+
+cargo build
+cargo run # build is implied
+
+cargo check # quickly check code will build
+```
+
+---
+rust-analyzer
+
+---
 OK, let's write some Rust!
 
 ---
@@ -163,14 +183,28 @@ Basic types
 * isize and usize
 * f32 and f64
 * bool
+* char
 * str and String
+
+---
+Arrays and Vectors
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+let a = [1, 2, 3, 4, 5];
+println!("The first element of the array is: {}", a[0]);
+
+let v = vec![1, 2, 3, 4, 5];
+println!("The first element of the vector is: {}", v[0]);
+```
 
 ---
 Structures
 
 ---
 <style scoped> section{ text-align: left; }</style>
-Definition
 
 ```rust
 struct User {
@@ -178,13 +212,7 @@ struct User {
     email: String,
     sign_in_count: u64,
 }
-```
 
----
-<style scoped> section{ text-align: left; }</style>
-Instantiating & Using
-
-```rust
 let user = User {
     username: String::from("foo"),
     email: String::from("foo@bar.com"),
@@ -196,3 +224,21 @@ println!(
     user.username, user.email, user.sign_in_count,
 );
 ```
+
+---
+Control Flow
+
+---
+
+```rust
+let a = [1, 2, 3, 4, 5];
+
+for element in a {
+    println!("the value is: {}", element);
+}
+```
+
+----
+mutability
+
+---
