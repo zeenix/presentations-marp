@@ -56,9 +56,6 @@ Isn't modern C++ safe?
 Are you a human?
 
 ---
-C++ is not safe
-
----
 ![bg fit](msrc-screenshot.png)
 
 ---
