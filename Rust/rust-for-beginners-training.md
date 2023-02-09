@@ -120,9 +120,20 @@ fn another_function(x: i32) {
 ```
 
 ---
-<style scoped> section{ text-align: left; }</style>
+Data types
 
+---
+Basic types
+
+---
+u8, i8, .., u128, i128, isize, usize
+
+---
 Structures
+
+---
+<style scoped> section{ text-align: left; }</style>
+Definition
 
 ```rust
 struct User {
@@ -130,7 +141,13 @@ struct User {
     email: String,
     sign_in_count: u64,
 }
+```
 
+---
+<style scoped> section{ text-align: left; }</style>
+Instantiating & Using
+
+```rust
 let user = User {
     username: String::from("foo"),
     email: String::from("foo@bar.com"),
