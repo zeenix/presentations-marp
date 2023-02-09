@@ -8,6 +8,9 @@ style: |
 ---
 # Rust for beginners
 
+<br/>
+Part 1: Dipping Toes
+
 ---
 Zeeshan Ali Khan
 
@@ -65,6 +68,9 @@ Are you a human?
 Opt-in vs Opt-out
 
 ---
+![bg fit](nsa-screenshot.png)
+
+---
 Beyond memory safety
 
 ---
@@ -83,9 +89,6 @@ Modern language
 * AWS
 * Dropbox
 * ...
-
----
-NSA
 
 ---
 OK, OK, can we got on with it?
