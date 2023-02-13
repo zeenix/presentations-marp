@@ -150,6 +150,8 @@ Variables
 
 ```rust
 fn main() {
+    let x: i32 = 5;
+    // Can be written as:
     let x = 5;
     println!("The value of x is: {}", x);
 }
@@ -234,7 +236,7 @@ Tuples
 <style scoped> section{ text-align: left; }</style>
 
 ```rust
-let tup = (500, 6.4, 1);
+let tup = (500, 6.4, 1); // (i32, f64, i32)
 println!("The second value is: {}", tup.1);
 
 let (x, y, z) = tup;
