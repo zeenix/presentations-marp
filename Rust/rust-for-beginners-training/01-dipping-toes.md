@@ -226,19 +226,48 @@ println!(
 ```
 
 ---
+Tuples
+<br/>
+(aka anonymous structs)
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+let tup = (500, 6.4, 1);
+println!("The second value is: {}", tup.1);
+
+let (x, y, z) = tup;
+println!("The value of y is: {}", y);
+```
+
+---
 Control Flow
 
 ---
+<style scoped> section{ text-align: left; }</style>
 
 ```rust
 let a = [1, 2, 3, 4, 5];
 
 for element in a {
-    println!("the value is: {}", element);
+    if element == 3 {
+        println!("found 3");
+
+        break;
+    } else {
+        println!("{} != 3", element);
+    }
 }
 ```
 
-----
+---
+while CONDITION { ... }
+
+---
+loop { ... }
+
+---
 mutability
 
 ---
