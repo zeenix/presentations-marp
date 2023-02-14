@@ -188,7 +188,7 @@ where
 ```
 
 ---
-No null pointers
+🎉 No null pointers 🎉
 
 ---
 <style scoped> section{ text-align: left; }</style>
