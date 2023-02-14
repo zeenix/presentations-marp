@@ -9,7 +9,7 @@ style: |
 # Rust for beginners
 
 <br/>
-Part 2: First Dive
+Part 2: Shallow First Dive
 
 ---
 
