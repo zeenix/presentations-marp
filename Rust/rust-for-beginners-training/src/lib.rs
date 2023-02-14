@@ -8,4 +8,5 @@
 #[cfg(doctest)]
 mod doctests {
     doc_comment::doctest!("../01-dipping-toes.md");
+    doc_comment::doctest!("../02-first-dive.md");
 }
