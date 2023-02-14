@@ -44,6 +44,60 @@ error[E0384]: cannot assign twice to immutable variable `x`
 ```
 
 ---
+Ownership
+
+---
+<style scoped> section{ text-align: left; }</style>
+Thinking in scopes
+
+```rust
+fn main() {
+    let s1 = "hello";
+    // s1 is valid from this point forward
+    {
+        let s2 = String::from("hello");
+        // s2 is valid from this point forward
+    }
+    // inner scope is now over; s2 is no longer valid
+}
+// outer scope is now over; s1 is no longer valid
+```
+
+---
+Strictly 1 Owner
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+let s1 = String::from("hello");
+let s2 = s1;
+println!("{}, world!", s1);
+```
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```console
+error[E0382]: borrow of moved value: `s1`
+```
+
+---
+Copy vs. Move
+
+---
+References & Borrowing
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+let s1 = String::from("hello");
+let s2 = &s1;
+println!("The length of '{}' is {}.", s1, s2.len());
+```
+
+---
 Enums
 
 ---
