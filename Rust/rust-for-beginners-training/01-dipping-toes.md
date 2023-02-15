@@ -34,10 +34,20 @@ Zeeshan Ali Khan
 What is Rust? 🦀
 
 ---
-Safety + Efficiency
+Systems Programming
 
 ---
-Safe languages
+Safe + Efficient
+
+---
+
+Zero-cost abstractions
+
+---
+If it compiles, it works!
+
+---
+Safe languages not new
 
 ---
 <style scoped> section { text-align: left; } </style>
@@ -47,10 +57,13 @@ Safe languages
 * ...
 
 ---
-Efficient languages
+Efficient languages not new either
 
 ---
 C/C++
+
+---
+The combo is revolutionary
 
 ---
 Isn't modern C++ safe?
