@@ -92,7 +92,30 @@ error[E0382]: borrow of moved value: `s1`
 ```
 
 ---
+Same w/ Function Arguments
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+fn add_first_two(v: Vec<i32>) -> i32 {
+    return v[0] + v[1];
+}
+
+let v = vec![1, 2, 3];
+let answer = add_first_two(v);
+
+println!("{} + {} = {}", v[0], v[1], answer);
+```
+
+---
 Copy vs. Move
+
+---
+All basic types: Copy
+
+---
+Can't just move things around
 
 ---
 References & Borrowing
@@ -104,6 +127,57 @@ References & Borrowing
 let s1 = String::from("hello");
 let s2 = &s1;
 println!("The length of '{}' is {}.", s1, s2.len());
+```
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+fn add_first_two(v: &Vec<i32>) -> i32 {
+    return v[0] + v[1];
+}
+
+let v = vec![1, 2, 3];
+let answer = add_first_two(&v);
+
+println!("{} + {} = {}", v[0], v[1], answer);
+```
+
+---
+But borrows are temporary
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+struct Heli {
+    reg: String
+}
+
+impl Heli {
+    fn new(reg: String) -> Heli {
+        Heli { reg: reg}
+    }
+
+    // Other methods here
+}
+
+let reg = "G-HONI".to_string();
+let heli = Heli::new(reg);
+
+println!("Registration {}", reg);
+```
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```console
+16 |     let heli = Heli::new(reg);
+   |                          --- value moved here
+17 |
+18 |     println!("Registration {}", reg);
+   |                                 ^^^ value used
+   |                                     after move
 ```
 
 ---
