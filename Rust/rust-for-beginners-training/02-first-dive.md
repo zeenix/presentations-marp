@@ -16,7 +16,7 @@ Part 2: Shallow First Dive
 Where things get interesting
 
 ---
-Mutability
+Non-mutable state by default
 
 ---
 <style scoped> section{ text-align: left; }</style>
@@ -41,6 +41,15 @@ error[E0384]: cannot assign twice to immutable variable `x`
   |     help: consider making this binding mutable: `mut x`
 6 | x = 6;
   | ^^^^^ cannot assign twice to immutable variable
+```
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+let mut x = 5;
+// This works!
+x = 6;
 ```
 
 ---
