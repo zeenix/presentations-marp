@@ -151,7 +151,7 @@ Variables
 ```rust
 fn main() {
     let x: i32 = 5;
-    // Can be written as:
+    // types for local variables typically inferred:
     let x = 5;
     println!("The value of x is: {}", x);
 }
