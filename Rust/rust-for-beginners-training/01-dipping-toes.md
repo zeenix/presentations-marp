@@ -257,6 +257,22 @@ println!("The value of y is: {}", y);
 ```
 
 ---
+Generics
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+// Not the best example, sorry!
+struct SuperHero<S> {
+    super_power: S,
+}
+
+let superman = SuperHero { super_power: 32 };
+let batman = SuperHero { super_power: "tech" };
+```
+
+---
 Powerful Enums 💪🏽
 
 ---
