@@ -446,4 +446,18 @@ fn longest<'a>(s1: &'a str, s2: &'a str) -> &'a str {
 ```
 
 ---
+`'static` lifetime
+
+---
+❌ Entire lifetime of the program
+
+---
+
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+let s: &'static str = "Hello, world!";
+```
+
+---
 # ☕
