@@ -270,7 +270,7 @@ person.say_hello();
 ```
 
 ---
-Generics
+Generics + Trait bounds
 
 ---
 <style scoped> section{ text-align: left; }</style>
