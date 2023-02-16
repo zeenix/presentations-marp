@@ -181,6 +181,36 @@ println!("Registration {}", reg);
 ```
 
 ---
+`Rc<T>`
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+use std::rc::Rc;
+
+struct Heli {
+    reg: Rc<String>
+}
+
+impl Heli {
+    fn new(reg: Rc<String>) -> Heli {
+        Heli { reg: reg}
+    }
+
+    // Other methods here
+}
+
+let reg = Rc::new("G-HONI".to_string());
+let heli = Heli::new(reg.clone());
+
+println!("Registration {}", reg);
+```
+
+---
+`Arc<T>`
+
+---
 Enums
 
 ---
