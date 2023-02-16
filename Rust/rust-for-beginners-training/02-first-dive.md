@@ -363,5 +363,68 @@ print_if_some(None); // prints "There is no value"
 ```
 
 ---
+Some Advanced Topics
 
+---
+`String` vs `&str`
+
+---
+
+---
+Lifetimes
+
+<br>
+The big scary monster
+
+---
+Remember scopes?
+
+---
+Every resource has a lifetime
+
+---
+Mostly important for references
+
+---
+Typically inferred
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+fn longest(s1: &str, s2: &str) -> &str {
+    if s1.len() > s2.len() {
+        s1
+    } else {
+        s2
+    }
+}
+```
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```console
+2 | fn longest(s1: &str, s2: &str) -> &str {
+    |             ^ expected lifetime parameter
+    |
+    = help: this function's return type contains a borrowed
+    value, but the signature does not say whether it is
+    borrowed from `s1` or `s2`
+```
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+fn longest<'a>(s1: &'a str, s2: &'a str) -> &'a str {
+    if s1.len() > s2.len() {
+        s1
+    } else {
+        s2
+    }
+}
+```
+
+---
 # ☕
