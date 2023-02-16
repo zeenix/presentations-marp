@@ -229,6 +229,22 @@ enum Message {
 Pattern matching
 
 ---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+fn process_message(msg: Message) {
+    match msg {
+        Message::Quit => println!("Quit"),
+        Message::Move { x, y } => println!("Move {}.{}", x, y),
+        Message::Write(text) => println!("{}", text),
+        Message::ChangeColor(r, g, b) => {
+            println!("R: {}, G: {}, B: {}", r, g, b);
+        }
+    }
+}
+```
+
+---
 Traits
 
 ---
