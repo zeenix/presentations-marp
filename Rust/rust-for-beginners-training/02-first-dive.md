@@ -369,6 +369,25 @@ Some Advanced Topics
 `String` vs `&str`
 
 ---
+`String`: Dynamically allocated & mutable
+
+---
+`&str`: string slice
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+// String literals
+let s: &str = "Hello, world!";
+
+// String allocated on the heap
+let allocated = String::from("Hello, world!");
+let s: &str = &allocated;
+
+// Also valid
+let s: &String = &allocated;
+```
 
 ---
 Lifetimes
