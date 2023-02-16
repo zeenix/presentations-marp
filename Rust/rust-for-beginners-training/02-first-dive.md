@@ -144,6 +144,24 @@ println!("{} + {} = {}", v[0], v[1], answer);
 ```
 
 ---
+Mutable Borrows
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+let mut x = 3;
+let y = &mut x;
+*y += 1;
+```
+
+----
+Only 1 mutable borrow at a time
+
+---
+Think RwLock
+
+---
 But borrows are temporary
 
 ---
