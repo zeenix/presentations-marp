@@ -28,8 +28,25 @@ Zeeshan Ali Khan
 * Open Source
 
 ---
+Rust
 
+---
+zbus
+
+---
+dbuz
+
+---
 ## 🛨  🚁  🐈
+
+---
+Mercedes-Benz Vans
+
+---
+Digital Upfitter Platform
+
+---
+![bg fit](esprinter.jpg)
 
 ---
 What is Rust? 🦀
