@@ -6,7 +6,7 @@ style: |
       font-size: 50px;
   }
 ---
-# D-Bus Oxidized
+# D-Bus Oxidized 🦀
 
 ---
 Zeeshan Ali Khan
@@ -139,6 +139,12 @@ AKA D-Bus daemon
 The Bus
 
 ---
+System & Session
+
+---
+peer-to-peer (p2p)
+
+---
 And "oxidizing"?
 
 ---
@@ -235,9 +241,6 @@ zvariant
 Wire protocol
 
 ---
-GVariant
-
----
 Learning Rust the hard way
 
 ---
@@ -272,10 +275,13 @@ assert_eq!(decoded, t);
 ```
 
 ---
+GVariant
+
+---
 Back to D-Bus
 
 ---
-Several moons later
+Several ☾ later
 
 ---
 zbus 1.0 🎉
@@ -427,7 +433,17 @@ D-Bus 2.0
 GVariant
 
 ---
+Nullable types
+
+---
 Remote transport
+
+---
+# Questions?
+
+<br/>
+https://freedesktop.org/dbus/zbus
+https://github.com/zeenix/dbuz
 
 ---
 # ☕
