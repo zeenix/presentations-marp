@@ -130,6 +130,15 @@ org.freedesktop.GeoClue2.Client.LocationUpdated(o old, o new)
 ```
 
 ---
+The Broker
+
+---
+AKA D-Bus daemon
+
+---
+The Bus
+
+---
 And "oxidizing"?
 
 ---
@@ -367,16 +376,7 @@ World conquered?
 Not exactly
 
 ---
-The Broker
-
----
-AKA D-Bus daemon
-
----
-The Bus
-
----
-Written in C
+Existing brokers in C
 
 ---
 CVEs over the years
