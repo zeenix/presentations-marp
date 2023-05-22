@@ -101,7 +101,7 @@ let r2 = &mut num as *mut i32;
 ---
 Can assign any arbitrary address
 
---
+---
 <style scoped> section{ text-align: left; }</style>
 
 ```rust
