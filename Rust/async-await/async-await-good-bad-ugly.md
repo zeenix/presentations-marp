@@ -23,6 +23,9 @@ FOSS
 # 🛩 🚁 🐈
 
 ---
+🦀
+
+---
 Async Foundations WG 
 
 ---
@@ -113,6 +116,13 @@ What does that even mean?
 async functions return a `Future` type
 
 ---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+fn hello_world() -> impl Future<Output = ()>;
+```
+
+---
 ![bg fit](future.gif)
 
 ---
@@ -132,13 +142,6 @@ pub enum Poll<T> {
     Ready(T),
     Pending,
 }
-```
-
----
-<style scoped> section{ text-align: left; }</style>
-
-```rust
-fn hello_world() -> impl Future<Output = ()>;
 ```
 
 ---
