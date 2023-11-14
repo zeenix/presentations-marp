@@ -148,6 +148,9 @@ cargo check # quickly check code will build
 rust-analyzer
 
 ---
+Github Copilot
+
+---
 OK, let's write some Rust!
 
 ---
