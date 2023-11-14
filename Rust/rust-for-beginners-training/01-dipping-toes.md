@@ -43,12 +43,6 @@ busd
 Mercedes-Benz Vans
 
 ---
-Digital Upfitter Platform
-
----
-![bg fit](esprinter.jpg)
-
----
 What is Rust? 🦀
 
 ---
