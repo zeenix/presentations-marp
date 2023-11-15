@@ -199,6 +199,9 @@ println!("Registration {}", reg);
 ```
 
 ---
+Smart pointers to the rescue!
+
+---
 `Rc<T>`
 
 ---
