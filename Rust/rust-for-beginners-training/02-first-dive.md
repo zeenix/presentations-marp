@@ -392,8 +392,8 @@ let s: &String = &allocated;
 ---
 Lifetimes
 
-<br>
-The big scary monster
+<br/>
+The big scary 👾
 
 ---
 Remember scopes?
@@ -460,4 +460,4 @@ let s: &'static str = "Hello, world!";
 ```
 
 ---
-# ☕
+# 🍲
