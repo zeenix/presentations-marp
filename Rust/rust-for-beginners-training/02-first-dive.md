@@ -393,7 +393,7 @@ let s: &String = &allocated;
 ```
 
 ---
-Lifetimes
+Lifetime Annotations
 
 <br/>
 The big scary 👾
@@ -402,10 +402,13 @@ The big scary 👾
 Remember scopes?
 
 ---
-Every resource has a lifetime
+Every reference has a lifetime
 
 ---
-Mostly important for references
+Purpose?
+
+---
+Prevent dangling references
 
 ---
 Typically inferred
