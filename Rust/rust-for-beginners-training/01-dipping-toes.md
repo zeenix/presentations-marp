@@ -318,4 +318,36 @@ Powerful Enums 💪🏽
 
 ---
 
+---
+Closures
+
+---
+Anonymous functions + environment
+
+---
+Used like data
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+    // Can omit type of parameters and return value.
+    // so `let expensive_closure = |num| {` is fine.
+    let expensive_closure = |num: u32| -> u32 {
+        println!("calculating slowly...");
+        thread::sleep(Duration::from_secs(2));
+        num
+    };
+```
+
+---
+Closures as arguments?
+
+---
+Home work
+
+---
+Uses the trait system
+
+---
 # ☕
