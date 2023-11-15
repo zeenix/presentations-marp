@@ -30,7 +30,7 @@ x = 6;
 ---
 <style scoped> section{ text-align: left; }</style>
 
-```console
+```rust
 error[E0384]: cannot assign twice to immutable variable `x`
  --> src/lib.rs:35:1
   |
@@ -87,7 +87,7 @@ println!("{}, world!", s1);
 ---
 <style scoped> section{ text-align: left; }</style>
 
-```console
+```rust
 error[E0382]: borrow of moved value: `s1`
 ```
 
@@ -189,7 +189,7 @@ println!("Registration {}", reg);
 ---
 <style scoped> section{ text-align: left; }</style>
 
-```console
+```rust
 16 |     let heli = Heli::new(reg);
    |                          --- value moved here
 17 |
@@ -423,7 +423,7 @@ fn longest(s1: &str, s2: &str) -> &str {
 ---
 <style scoped> section{ text-align: left; }</style>
 
-```console
+```rust
 2 | fn longest(s1: &str, s2: &str) -> &str {
     |             ^ expected lifetime parameter
     |
