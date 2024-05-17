@@ -378,6 +378,34 @@ fn process_message(msg: Message) {
 ```
 
 ---
+🎉 No null pointers 🎉
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+enum Option<T> {
+    None,
+    Some(T),
+}
+```
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+fn print_if_some(x: Option<i32>) {
+    match x {
+        Some(value) => println!("Value is {}", value),
+        None => println!("There is no value. 😞"),
+    }
+}
+
+print_if_some(Some(42)); // prints "Value is 42"
+print_if_some(None); // prints "There is no value"
+```
+
+---
 Closures
 
 ---
