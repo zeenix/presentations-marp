@@ -317,6 +317,65 @@ let batman = SuperHero { super_power: "tech" };
 Powerful Enums 💪🏽
 
 ---
+<style scoped> section{ text-align: left; }</style>
+
+The boring kind
+
+```rust
+enum IpAddrKind {
+    V4,
+    V6,
+}
+
+let four = IpAddrKind::V4;
+let six = IpAddrKind::V6;
+```
+
+---
+<style scoped> section{ text-align: left; }</style>
+The interesting kind
+
+```rust
+enum IpAddr {
+    V4(u8, u8, u8, u8),
+    V6(String),
+}
+
+let home = IpAddr::V4(127, 0, 0, 1);
+let loopback = IpAddr::V6(String::from("::1"));
+```
+
+---
+<style scoped> section{ text-align: left; }</style>
+They are super powerful
+
+```rust
+enum Message {
+    Quit,
+    Move { x: i32, y: i32 },
+    Write(String),
+    ChangeColor(i32, i32, i32),
+}
+```
+
+---
+Pattern matching
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+fn process_message(msg: Message) {
+    match msg {
+        Message::Quit => println!("Quit"),
+        Message::Move { x, y } => println!("Move {}.{}", x, y),
+        Message::Write(text) => println!("{}", text),
+        Message::ChangeColor(r, g, b) => {
+            println!("R: {}, G: {}, B: {}", r, g, b);
+        }
+    }
+}
+```
 
 ---
 Closures
