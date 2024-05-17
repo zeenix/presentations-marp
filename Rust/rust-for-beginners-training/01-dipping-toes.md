@@ -350,4 +350,4 @@ Home work
 Uses the trait system
 
 ---
-# ☕
+# 🍻
