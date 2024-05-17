@@ -406,6 +406,36 @@ print_if_some(None); // prints "There is no value"
 ```
 
 ---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+enum Result<T, E> {
+    Ok(T),
+    Err(E),
+}
+```
+
+---
+`?` operator
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+fn read_file() -> Result<String, std::io::Error> {
+    // Doesn't have to be the same error type.
+    let f = File::open("hello.txt")?;
+    let mut s = String::new();
+    f.read_to_string(&mut s)?;
+
+    Ok(s)
+}
+```
+
+---
+Can be used with `Option` too
+
+---
 Closures
 
 ---
