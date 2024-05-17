@@ -458,13 +458,4 @@ Used like data
 ```
 
 ---
-Closures as arguments?
-
----
-Home work
-
----
-Uses the trait system
-
----
 # 🍻
