@@ -40,7 +40,7 @@ busd
 ## 🛨  🚁  🐈
 
 ---
-Mercedes-Benz Vans
+Team X
 
 ---
 What is Rust? 🦀
