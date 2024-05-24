@@ -155,7 +155,7 @@ let y = &mut x;
 *y += 1;
 ```
 
-----
+---
 Only 1 mutable borrow at a time
 
 ---
