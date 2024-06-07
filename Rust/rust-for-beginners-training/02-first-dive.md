@@ -371,4 +371,4 @@ let s: &'static str = "Hello, world!";
 ```
 
 ---
-# 🍲
+# 🍻
