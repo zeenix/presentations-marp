@@ -274,9 +274,6 @@ where
 ```
 
 ---
-Some Advanced Topics
-
----
 `String` vs `&str`
 
 ---
