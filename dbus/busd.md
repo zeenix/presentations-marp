@@ -305,25 +305,45 @@ After 2 weekends
 Basic impl done
 
 ---
+busd was born!
+
+---
+Performance
+
+---
+
+| Broker      | Single connection  | 20 connections |
+|-------------|--------------------|----------------|
+| dbus-broker |      0.417053s     |    6.757665    |
+| dbus-daemon |      0.439600s     |    6.491848s   |
+| busd        |      0.433934s     |    6.666954s   |
+
+---
+There must be a catch!
+
+---
 zbus doing the heavy lifting
+
+---
+Per-connection Queues
 
 ---
 tokio
 
 ---
-Similar Performance
+Per-connection Tasks
 
 ---
-Windows, MacOS & Linux
-
----
-busd
+Thread Pools
 
 ---
 Current status: MVP
 
 ---
 Standard API
+
+---
+Windows, MacOS & Linux
 
 ---
 Future goals
