@@ -370,7 +370,7 @@ Policy
 Security
 
 ---
-Better performance
+Performance Tuning
 
 ---
 Sandboxed Apps
