@@ -376,6 +376,21 @@ Performance Tuning
 Sandboxed Apps
 
 ---
+Slow Progress 😥
+
+---
+Doing it alone
+
+---
+STF Application Rejected 😿
+
+---
+Part of my new job
+
+---
+![bg fit](uncle-sam-I-want-you.jpg)
+
+---
 
 ## Questions?
 
