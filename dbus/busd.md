@@ -290,7 +290,7 @@ Modern requirements
 Sandboxing
 
 ---
-xdg-dbus-proxy
+xdg-dbus-proxy 😥
 
 ---
 New D-Bus broker?
