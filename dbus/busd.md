@@ -302,10 +302,10 @@ Let's first experiment
 After 2 weekends
 
 ---
-Basic impl done
+Basic impl done 😎
 
 ---
-busd was born!
+busd was born! 🥳
 
 ---
 Performance
