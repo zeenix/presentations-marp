@@ -42,7 +42,7 @@ Geolocation D-Bus service
 Written in C
 
 ---
-Tired of crashe reports
+Tired of crash reports
 
 ---
 Oxidizing
@@ -263,7 +263,7 @@ dbus-daemon
 dbus-broker
 
 ---
-Existing brokers in C
+C
 
 ---
 Really an issue?
