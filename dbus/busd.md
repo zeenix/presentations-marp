@@ -308,6 +308,15 @@ Basic impl done 😎
 busd was born! 🥳
 
 ---
+Why not oxidize dbus-daemon?
+
+---
+First Principles Thinking
+
+---
+C Workarounds
+
+---
 Performance
 
 ---
