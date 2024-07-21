@@ -380,7 +380,3 @@ Sandboxed Apps
 ## Questions?
 
 https://github.com/dbus2/
-
----
-
-## ☕
