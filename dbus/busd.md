@@ -324,7 +324,7 @@ Why not oxidize dbus-daemon?
 First Principles Thinking
 
 ---
-C Workarounds
+Working around C
 
 ---
 Performance
