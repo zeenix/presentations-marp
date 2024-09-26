@@ -32,6 +32,11 @@ Zeeshan Ali Khan
 Now a Rust fanboy
 
 ---
+JUCR
+
+🚙⌁
+
+---
 The story begins in 2019..
 
 ---
@@ -396,7 +401,7 @@ Doing it alone
 STF Application Rejected 😿
 
 ---
-Part of my new job
+Part of my new job?
 
 ---
 ![bg fit](uncle-sam-I-want-you.jpg)
