@@ -187,6 +187,9 @@ D-Bus made easy
 🙏 Marc-André Lureau 🙏
 
 ---
+![bg fit](zbus-pixels.gif)
+
+---
 What's with the "z"?
 
 ---
