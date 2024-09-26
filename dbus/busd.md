@@ -6,7 +6,9 @@ style: |
       font-size: 50px;
   }
 ---
-# busd
+# ![busd.svg](busd-logo.svg)
+
+## busd
 
 There is a new D-Bus broker in town
 
