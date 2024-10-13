@@ -410,6 +410,12 @@ Part of my new job?
 ![bg fit](uncle-sam-I-want-you.jpg)
 
 ---
+Talking of my job
+
+---
+`firmware-controller`
+
+---
 
 ## Questions?
 
