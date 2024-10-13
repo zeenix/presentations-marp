@@ -413,7 +413,7 @@ Part of my new job?
 Talking of my job
 
 ---
-`firmware-controller`
+https://github.com/jucr-io/firmware-controller
 
 ---
 
