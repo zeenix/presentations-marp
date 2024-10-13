@@ -410,9 +410,6 @@ Part of my new job?
 ![bg fit](uncle-sam-I-want-you.jpg)
 
 ---
-![bg fit](compose-zeeshan-ali-khan.png)
-
----
 
 ## Questions?
 
