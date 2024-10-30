@@ -185,16 +185,31 @@ No built-in runtime
 Single- and multithreaded runtimes available
 
 ---
-tokio and async-std
+tokio and embassy
 
 ---
 <style scoped> section{ text-align: left; }</style>
 
 ```rust
-use async_std::task;
+use tokio::runtime::Runtime;
 
 fn main() {
-    task::block_on(greet_world())
+    let rt = Runtime::new().unwrap();
+
+    rt.block_on(greet_world())
+}
+```
+
+---
+Async main
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+#[tokio::main]
+async fn main() {
+    greet_world().await;
 }
 ```
 
@@ -205,10 +220,12 @@ async blocks
 <style scoped> section{ text-align: left; }</style>
 
 ```rust
-use async_std::task;
+use tokio::runtime::Runtime;
 
 fn main() {
-    task::block_on(async {
+    let rt = Runtime::new().unwrap();
+
+    rt.block_on(async {
         println!("Hello, world!");
     })
 }
@@ -224,18 +241,21 @@ Spawning and tasks
 <style scoped> section{ text-align: left; }</style>
 
 ```rust
-use std::{thread::sleep, time::Duration};
-use async_std::task::spawn;
+use std::time::Duration;
+use tokio::{spawn, time::sleep};
 
-spawn(async {
-    println!("hello, world!");
-});
-spawn(async {
-    println!("bye, world!");
-});
+#[tokio::main]
+async main() {
+    spawn(async {
+        println!("hello, world!");
+    });
+    spawn(async {
+        println!("bye, world!");
+    });
 
-// Do other things or sleep..
-sleep(Duration::from_secs(3));
+    // Do other things or sleep..
+    sleep(Duration::from_secs(3)).await;
+}
 ```
 
 ---
@@ -245,7 +265,7 @@ Tasks are futures too!
 <style scoped> section{ text-align: left; }</style>
 
 ```rust
-use async_std::task::spawn;
+use tokio::task::spawn;
 
 let task = spawn(async {
     println!("hello, world!");
