@@ -355,6 +355,12 @@ block_on(async {
 Async in Traits
 
 ---
+Possible w/ Rust 1.75
+
+---
+`dyn Trait` not possible 😢
+
+---
 ![bg fit](why-async-trait-hard-blog.png)
 
 ---
