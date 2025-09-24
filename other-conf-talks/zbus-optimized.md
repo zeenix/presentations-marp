@@ -355,6 +355,16 @@ The Future?
 ![bg fit](future.gif)
 
 ---
+Micro-optimizations
+
+---
+<style scoped> section{ text-align: left; }</style>
+A few already in
+
+* Tait Hoyem
+* Emilio Cobos Álvarez
+
+---
 Varlink
 
 ---
