@@ -24,11 +24,6 @@ Open Source & Linux Systems Engineer
 🦀
 
 ---
-JUCR
-
-🚙⌁
-
----
 What's zbus?
 
 ---
