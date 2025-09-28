@@ -365,6 +365,9 @@ A few already in
 * Emilio Cobos Álvarez
 
 ---
+The future of IPC
+
+---
 Varlink
 
 ---
