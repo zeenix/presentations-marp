@@ -349,12 +349,14 @@ Performs better?
 | zvariant 3 |  54 µs | 1.05 **ms** | 538 µs   | 246 µs     |
 | zvariant 5 |   9 µs |  202 **µs** |  47 µs   | **NaN**    |
 
+<!-- Explain NaN -->
 ---
 🙌
 
 ---
 You promised 95%! 😡
 
+<!-- Only 91% in the table -->
 ---
 Hardware-dependent
 
