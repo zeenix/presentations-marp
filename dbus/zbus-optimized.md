@@ -246,6 +246,19 @@ Years go by..
 trait Schema {
     const SCHEMA: &'static NamedType;
 }
+
+pub struct NamedType {
+    pub name: &'static str,
+    pub ty: &'static SdmTy,
+}
+
+pub enum SdmTy {
+    Bool,
+    I8,
+    Seq(&'static NamedType),
+    Struct(&'static [&'static NamedValue]),
+    ...
+}
 ```
 
 ---
