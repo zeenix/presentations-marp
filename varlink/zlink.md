@@ -63,8 +63,8 @@ Let's benchmark
 
 | Format | Data Kind     | Big (µs) | Small (µs) |
 | ------ | ------------- | -------- | ---------- |
-| JSON   | HashMap-heavy |  340.2   |  59.2      |
-| D-Bus  | HashMap-heavy |  399.1   |  78.6      |
+| JSON   | HashMap-heavy |  340.2   |  **59.2**  |
+| D-Bus  | HashMap-heavy |  399.1   |  **78.6**  |
 | JSON   | Vector-based  | 5690.3   | 317.9      |
 | D-Bus  | Vector-based  | 3649.8   | 180.5      |
 
@@ -79,8 +79,8 @@ What about size?
 
 | Format | Data Kind     | Big (KiB) | Small (KiB) |
 | ------ | ------------- | --------- | ----------- |
-| JSON   | HashMap-heavy |   80.99   |  14.87      |
-| D-Bus  | HashMap-heavy |   97.74   |  18.52      |
+| JSON   | HashMap-heavy |   80.99   |  **14.87**  |
+| D-Bus  | HashMap-heavy |   97.74   |  **18.52**  |
 | JSON   | Vector-based  | 2311.23   | 132.98      |
 | D-Bus  | Vector-based  |  933.36   |  47.43      |
 
