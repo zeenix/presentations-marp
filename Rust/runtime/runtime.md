@@ -46,7 +46,7 @@ async fn hello_world() {
 
     async move {
         take_x(x).await;
-    }
+    }.await
 }
 ```
 
