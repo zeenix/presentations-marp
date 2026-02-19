@@ -220,7 +220,7 @@ Guarantee that pointee will not move
 Unless it implements `Unpin`
 
 ---
-`Unpin` = "It doesn't matter I move around"
+`Unpin` = "Doesn't matter if I move"
 
 ---
 Most types are `Unpin`
