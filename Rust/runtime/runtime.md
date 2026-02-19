@@ -229,6 +229,12 @@ Most types are `Unpin`
 Even our friend `Foo`
 
 ---
+`!Unpin` explicit
+
+---
+Using `PhantomPinned`
+
+---
 `Pin` is also `Unpin` 😵‍💫
 
 ---
