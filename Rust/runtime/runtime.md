@@ -247,7 +247,7 @@ What about `!Unpin` types?
 `Box::pin() -> Pin<Box<T>>`
 
 ---
-`std::pin::pin!` and `futures::pin_mut!` macro
+`std::pin::pin!` and `futures::pin_mut!`
 
 ---
 We'll uses both later
