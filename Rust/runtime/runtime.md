@@ -235,13 +235,37 @@ Even our friend `Foo`
 Using `PhantomPinned`
 
 ---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+struct Foo {
+  a: u32,
+  b: *const u32,  // Invariant `self.b == &self.a`
+  make_it_not_unpin: std::marker::PhantomPinned,
+}
+```
+
+---
 `Pin` is also `Unpin` 😵‍💫
+
+---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+impl<Ptr> Pin<Ptr>
+where
+    Ptr: Deref,
+    <Ptr as Deref>::Target: Unpin,
+{
+    pub const fn new(pointer: Ptr) -> Pin<Ptr>;
+}
+```
 
 ---
 What about `!Unpin` types?
 
 ---
-2 ways to make them `Unpin`
+Can make them `Unpin`
 
 ---
 `Box::pin() -> Pin<Box<T>>`
@@ -254,17 +278,6 @@ We'll uses both later
 
 ---
 More nuanced topic
-
----
-<style scoped> section{ text-align: left; }</style>
-
-```rust
-struct Foo {
-  a: u32,
-  b: *const u32,  // Invariant `self.b == &self.a`
-  make_it_not_unpin: std::marker::PhantomPinned,
-}
-```
 
 ---
 What's this to do with async?
