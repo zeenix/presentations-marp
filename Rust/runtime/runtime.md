@@ -15,7 +15,7 @@ Zeeshan Ali Khan
 Before we begin
 
 ---
-Aassumptions
+Assumptions
 
 ---
 1\. Basic Rust knowledge assumed
@@ -760,7 +760,14 @@ let mut cx = Context::from_waker(futures::task::noop_waker_ref());
 ```
 
 ---
-`Waker`
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+pub struct Waker {
+    pub fn wake(self);
+    pub fn wake_by_ref(&self);
+}
+```
 
 ---
 <style scoped> section{ text-align: left; }</style>
@@ -898,7 +905,7 @@ Err(e) if e.kind() == io::ErrorKind::WouldBlock => {
 }
 ```
 
-----
+---
 Does it work now? 😅
 
 ---
