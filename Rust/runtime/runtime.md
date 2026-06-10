@@ -205,6 +205,7 @@ Getting to know the scary 🤡
 ```rust
 struct Foo {
   a: u32,
+
   // Suppose Rust allowed `'self` lifetime.
   b: &'self u32,  // Invariant `self.b == &self.a`
 }
@@ -216,6 +217,7 @@ struct Foo {
 ```rust
 struct Foo {
   a: u32,
+
   // Invariant `self.b == (&self.a as const* u32)`
   b: *const u32,
 }
