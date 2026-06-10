@@ -287,7 +287,7 @@ where
 What about `!Unpin` types?
 
 ---
-Can make them `Unpin`
+2 ways to pin them
 
 ---
 `Box::pin() -> Pin<Box<T>>`
