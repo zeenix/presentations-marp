@@ -265,7 +265,10 @@ struct Foo {
 ```
 
 ---
-`Pin` is also `Unpin` 😵‍💫
+`Pin<Ptr>` is also `Unpin` 😵‍💫
+
+---
+Only if `Ptr` is `Unpin`
 
 ---
 <style scoped> section{ text-align: left; }</style>
