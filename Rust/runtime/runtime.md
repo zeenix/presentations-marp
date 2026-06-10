@@ -697,7 +697,7 @@ let handle2 = executor.spawn(async move {
 executor.run();
 
 handle1.join();
-handle2.join();    
+handle2.join();
 ```
 
 ---
