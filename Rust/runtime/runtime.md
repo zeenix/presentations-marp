@@ -216,7 +216,8 @@ struct Foo {
 ```rust
 struct Foo {
   a: u32,
-  b: *const u32,  // Invariant `self.b == &self.a`
+  // Invariant `self.b == (&self.a as const* u32)`
+  b: *const u32,
 }
 ```
 
