@@ -327,13 +327,12 @@ async fn foo() {
 use std::ptr::null;
 
 fn foo() -> impl Future<Output = ()> {
-    let a = 42_u32; 
-    let b = &a;
+    let mut foo = Foo {
+        state: FooStateMachine::Bar { a: 42, b: null() },
+    };
+    foo.state.b = &foo.state.a as *const _;
 
-    let mut state = FooStateMachine::Bar { a, b: null() }
-    state.b = &state.a;
-
-    Foo { state }
+    foo
 }
 
 struct Foo {
