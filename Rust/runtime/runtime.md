@@ -168,6 +168,12 @@ What's this `Future` you speak of?
 ![bg fit](future.gif)
 
 ---
+Promise in some languages
+
+---
+Future work
+
+---
 <style scoped> section{ text-align: left; }</style>
 
 ```rust
