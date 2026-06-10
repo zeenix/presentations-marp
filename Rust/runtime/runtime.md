@@ -515,8 +515,6 @@ struct Task {
 impl super::Executor for Executor {
     type TaskHandle<O> = TaskHandle<O>;
 
-    // `block_on` defined here.
-
     fn spawn<F>(&mut self, future: F) -> TaskHandle<F::Output>
     where
         F: Future + 'static,
@@ -538,7 +536,6 @@ impl super::Executor for Executor {
 
 ```rust
 impl super::Executor for Executor {
-    // ...
     fn run(&mut self) {
         while let Some(task) = self.tasks.pop_front() {
             self.block_on(task.future);
