@@ -104,6 +104,16 @@ fn main() {
 `main` macro
 
 ---
+<style scoped> section{ text-align: left; }</style>
+
+```rust
+#[tokio::main]
+async main() {
+    greet_world().await;
+}
+```
+
+---
 Spawning tasks
 
 ---
