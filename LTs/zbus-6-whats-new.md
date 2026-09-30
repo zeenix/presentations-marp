@@ -27,7 +27,7 @@ Time to break things 💥
 ## zbus 6.0
 
 ---
-1\. One crate to rule them all 💍
+One crate to rule them all 💍
 
 ---
 zvariant & zbus_names → zbus
@@ -39,7 +39,7 @@ zvariant & zbus_names → zbus
 GVariant → `zgvariant` crate 👋
 
 ---
-2\. RIP blocking API 🪦
+RIP blocking API 🪦
 
 ---
 <style scoped> section{ text-align: left; }</style>
@@ -60,7 +60,7 @@ let reply = zbus::block_on(async {
 ```
 
 ---
-3\. Our own runtime: zruntime 🏃
+Our own runtime: zruntime 🏃
 
 ---
 Runs on the thread calling `block_on`
@@ -89,7 +89,7 @@ let conn = connection::Builder::session()
 ```
 
 ---
-4\. On a diet 🥗
+On a diet 🥗
 
 ---
 Default build: 66 → 38 crates
@@ -116,7 +116,7 @@ Only the features it needs: 1466 KiB 🎉
 <!-- zbus's binary-size fixtures, `size` profile (fat LTO, 1 codegen unit, stripped), x86_64
 Linux, default runtime. The service: 1896 → 1669 → 1444 KiB. -->
 ---
-5\. Nicer API ✨
+Nicer API ✨
 
 ---
 Builders: one `?` at the end
@@ -141,7 +141,7 @@ let conn = connection::Builder::session()
 ```
 
 ---
-Properties: just serde
+Easier properties
 
 ---
 Thanks, contributors! 🙏
